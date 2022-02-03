@@ -1,0 +1,38 @@
+{
+  "name": "webapp-ocrmarss",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Server.js",
+  "engines": {
+    "node": "12.11.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon Server.js",
+    "client": "cd client && npm start ",
+    "start": "concurrently \"nodemon Server.js\" \"npm run client\""
+  },
+  "keywords": [],
+  "author": " Siwar Belkhir",
+  "license": "ISC",
+  "dependencies": {
+    "@emotion/react": "^11.7.1",
+    "@emotion/styled": "^11.6.0",
+    "@material-ui/core": "^4.12.3",
+    "@mui/icons-material": "^5.3.1",
+    "@mui/material": "^5.3.1",
+    "@mui/styles": "^5.3.0",
+    "bcrypt": "^5.0.1",
+    "bcryptjs": "^2.4.3",
+    "concurrently": "^7.0.0",
+    "crypto-js": "^4.1.1",
+    "dotenv": "^12.0.4",
+    "express": "^4.17.2",
+    "express-validator": "^6.14.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.1.6",
+    "nodemailer": "^6.7.2",
+    "nodemon": "^2.0.15",
+    "npm-check-updates": "^12.1.0"
+  }
+}
