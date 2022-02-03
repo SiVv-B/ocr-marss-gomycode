@@ -11,7 +11,7 @@
     "server": "nodemon Server.js",
     "client": "cd client && npm start ",
     "start": "concurrently \"nodemon Server.js\" \"npm run client\"",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm insall --prefix client && npm run build --prefix client"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
   },
   "keywords": [],
   "author": " Siwar Belkhir",
