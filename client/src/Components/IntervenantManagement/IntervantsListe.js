@@ -58,19 +58,22 @@ import Tooltip from '@mui/material/Tooltip'
           </Fab>
         </Link>
       </div>
-      {/* searchBar */}
-      <form onSubmit={onSubmit}
+          {/* searchBar */}
+          <form onSubmit={onSubmit}
             style={{
               display:'flex',
               marginLeft:'2%',
-              width:'50%',
+              maxHeight:'5%',
+              width:'100%',
+              border:'solid',
+              borderColor:'white',             
             }}>
         <input
           onChange={onChange}
           value={searchTerm}
           type="text"
-          placeholder=" ⌕..Chercher intervenant"
-          
+          placeholder=" ⌕..Chercher un intervenant"
+          style={{borderStyle:'none',width:'15%',}}
         />
 
         {intervenants
@@ -78,9 +81,9 @@ import Tooltip from '@mui/material/Tooltip'
             if (searchTerm == '') {
               return null
             } else if (
-              intervenant.username.toLowerCase().includes(searchTerm.toLowerCase())
+              intervenant.Prenom.toLowerCase().includes(searchTerm.toLowerCase()) || intervenant.Nom.toLowerCase().includes(searchTerm.toLowerCase())
             ) {
-              return intervenant
+              return <div>{intervenant}</div>
             }
           })
           .map((intervenant) => (

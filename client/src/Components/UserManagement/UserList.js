@@ -65,14 +65,19 @@ const UserList = () => {
             style={{
               display:'flex',
               marginLeft:'2%',
+              maxHeight:'5%',
+              width:'100%',
+              border:'solid',
+              borderColor:'white',             
             }}>
         <input
           onChange={onChange}
           value={searchTerm}
           type="text"
           placeholder=" ⌕..Chercher client"
+          style={{borderStyle:'none',width:'15%',}}
         />
-
+<br/>
         {users
           .filter((user) => {
             if (searchTerm == '') {
@@ -80,7 +85,7 @@ const UserList = () => {
             } else if (
               user.username.toLowerCase().includes(searchTerm.toLowerCase())
             ) {
-              return user
+              return <div>{user}</div>
             }
           })
           .map((user) => (
