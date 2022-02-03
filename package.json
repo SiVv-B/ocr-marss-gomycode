@@ -10,7 +10,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "server": "nodemon Server.js",
     "client": "cd client && npm start ",
-    "start": "concurrently \"nodemon Server.js\" \"npm run client\""
+    "start": "concurrently \"nodemon Server.js\" \"npm run client\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm insall --prefix client && npm run build --prefix client"
   },
   "keywords": [],
   "author": " Siwar Belkhir",
