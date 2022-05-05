@@ -19,7 +19,7 @@ const AuthReducer = (state = initialState, action) => {
       return {
         ...state, user:action.payload.user, lodaing: false,isAuth: true, }
     case USER_LOGIN:
-      localStorage.setItem('Token', action.payload.token)
+      localStorage.setItem('token', action.payload.token)
       return {
         ...state, user: action.payload.searchedUser,loading: false,isAuth: true,
       }

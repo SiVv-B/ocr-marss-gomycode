@@ -19,7 +19,6 @@ import Navbar from './Components/NavBar'
 import IntervenantsListe from './Components/IntervenantManagement/IntervantsListe'
 import SingleIntervenant from './Components/IntervenantManagement/SingleIntervenant'
 import AddIntervenant from './Components/IntervenantManagement/AddIntervenant'
-import IntervUserList from './Components/IntervUserPopulated/IntervUserList'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 
@@ -28,7 +27,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 function App() {
   const dispatch = useDispatch()
   useEffect(() => {
-    if (localStorage.getItem('authtoken')) {
+    if (localStorage.getItem('token')) {
       dispatch(getUser())
     }
   }, [])
@@ -70,7 +69,6 @@ function App() {
             element={<SingleIntervenant />}
           />
           <Route path="/intervenant-add" element={<AddIntervenant />} />
-          <Route path="/toutintervenantsdesclients" element={<IntervUserList />}/>
         </Routes>
       </BrowserRouter>
 

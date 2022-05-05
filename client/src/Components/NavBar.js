@@ -237,88 +237,33 @@ const Navbar = () => {
             </Link>
 
             <div
-            style={{
-              display:'flex',
-              justifyContent:'space-around',
-              marginLeft:'5%',
-              width:'50%',
-            }}>
+              style={{
+                display: 'flex',
+                justifyContent: 'space-around',
+                marginLeft: '5%',
+                width: '50%',
+              }}
+            >
               <Link
                 to="/list"
-                style={{ textDecoration: 'none', color: '#FFF', }}
+                style={{ textDecoration: 'none', color: '#FFF' }}
               >
                 Liste des clients{' '}
               </Link>
 
               <Link
                 to="/intervenantsListe"
-                style={{ textDecoration: 'none', color: '#FFF', }}
+                style={{ textDecoration: 'none', color: '#FFF' }}
               >
                 Liste des intervenants
               </Link>
             </div>
-{/* 
-            {isAuth && (
-              <div
-                style={{
-                  display: 'flex',
-                  marginLeft: '35%',
-                }}
-              >
-                <IconButton
-                  size="large"
-                  aria-label="account of current user"
-                  aria-controls="menu-appbar"
-                  aria-haspopup="true"
-                  onClick={handleMenu}
-                  color="inherit"
-                >
-                  <AccountCircle />
-                </IconButton>
-                <IconButton
-                  size="large"
-                  aria-label="show 4 new mails"
-                  color="inherit"
-                >
-                  <Badge badgeContent={4} color="error">
-                    <MailIcon />
-                  </Badge>
-                </IconButton>
-                <IconButton
-                  size="large"
-                  aria-label="show 17 new notifications"
-                  color="inherit"
-                >
-                  <Badge badgeContent={17} color="error">
-                    <NotificationsIcon />
-                  </Badge>
-                </IconButton>
-                <Menu
-                  id="menu-appbar"
-                  anchorEl={anchorEl}
-                  anchorOrigin={{
-                    vertical: 'top',
-                    horizontal: 'right',
-                  }}
-                  keepMounted
-                  transformOrigin={{
-                    vertical: 'top',
-                    horizontal: 'right',
-                  }}
-                  open={Boolean(anchorEl)}
-                  onClose={handleClose}
-                >
-                  <MenuItem onClick={handleClose}>Profile</MenuItem>
-                  <MenuItem onClick={handleClose}>My account</MenuItem>
-                </Menu>
-              </div>
-            )} */}
             {isAuth ? (
               <div
                 style={{
                   display: 'flex',
                   marginRight: '2%',
-                  marginLeft:'2%',
+                  marginLeft: '2%',
                 }}
               >
                 <FormGroup>
@@ -345,8 +290,7 @@ const Navbar = () => {
                   sx={{
                     display: 'flex',
                     width: '150%',
-                    marginLeft:'200%',
-                   
+                    marginLeft: '200%',
                   }}
                 >
                   Se connecter

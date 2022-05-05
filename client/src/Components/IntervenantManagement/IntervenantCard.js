@@ -22,7 +22,6 @@ import SaveIcon from '@mui/icons-material/Save'
 import Box from '@mui/material/Box'
 import Tooltip from '@mui/material/Tooltip'
 
-
 import Popup from '../../Components/styling/Popup'
 import '../styling/Popup'
 const ITEM_HEIGHT = 48
@@ -46,7 +45,6 @@ const IntervenantCard = ({ intervenant }) => {
     DateDerniereFicheDexposition: '',
     DateDerniereFicheDaptitude: '',
     Commentaire: ' ',
-
   })
   const handleChange = (event) => {
     setupDated({ ...updatedIntervenant, [event.target.id]: event.target.value })
@@ -78,8 +76,6 @@ const IntervenantCard = ({ intervenant }) => {
       DateDerniereFicheDexposition: '',
       DateDerniereFicheDaptitude: '',
       Commentaire: ' ',
-
-
     })
     setShow(false)
   }
@@ -98,8 +94,6 @@ const IntervenantCard = ({ intervenant }) => {
     setAnchorEl(null)
   }
   /* --------- */
-
- 
 
   return (
     <Box
@@ -320,7 +314,6 @@ const IntervenantCard = ({ intervenant }) => {
                       value={updatedIntervenant.Commentaire}
                     />
                   </div>
-
 
                   <Tooltip title="Enregistrer les modifications">
                     <IconButton type="submit" className="saveEdit">

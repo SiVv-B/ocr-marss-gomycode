@@ -25,7 +25,6 @@ import { useDispatch } from 'react-redux'
 import { Link } from 'react-router-dom'
 import { useNavigate } from 'react-router'
 
-
 const ITEM_HEIGHT = 48
 
 const UserCard = ({ user }) => {
@@ -123,9 +122,6 @@ const UserCard = ({ user }) => {
   }
   /* --------- */
 
-
-  
-
   return (
     <Box
       className="container"
@@ -158,10 +154,9 @@ const UserCard = ({ user }) => {
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
-            marginLeft:'80%',
+            marginLeft: '80%',
           }}
         >
-
           {/* //boutton voir plus de details */}
           <Tooltip title="Voir les détails de ce client">
             <Link to={`/details/${user._id}`}>
@@ -181,7 +176,7 @@ const UserCard = ({ user }) => {
             onClick={menuHandleClick}
           >
             <MoreVertIcon />
-          </IconButton>        
+          </IconButton>
           <Menu
             id="long-menu"
             MenuListProps={{
@@ -197,7 +192,6 @@ const UserCard = ({ user }) => {
               },
             }}
           >
-
             <Tooltip title="Modifier les informations">
               <IconButton onClick={handleEdit}>
                 <ModeEditOutlineOutlinedIcon />
@@ -226,7 +220,7 @@ const UserCard = ({ user }) => {
                       value={updatedUser.email}
                     />
                   </div>
-                {/*   <div className="form-group">
+                  {/*   <div className="form-group">
                   <label for="password">Mot de pass</label>
                   <input
                     onChange={handleChange}

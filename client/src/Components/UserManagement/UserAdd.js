@@ -488,7 +488,7 @@ const UserAdd = () => {
         <button
           type="submit"
           className="btn btn-light"
-          style={{ maxHeight: '5%', marginLeft: '20%'}}
+          style={{ maxHeight: '5%', marginLeft: '20%' }}
         >
           Ajouter le client
         </button>

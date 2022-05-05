@@ -1,8 +1,6 @@
 import React, { useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
-import {
-  getOneUser,
-} from '../../Redux/Actions/UserActions'
+import { getOneUser } from '../../Redux/Actions/UserActions'
 import { useParams } from 'react-router'
 
 import Card from '@mui/material/Card'
@@ -17,22 +15,17 @@ import AccordionSummary from '@mui/material/AccordionSummary'
 import AccordionDetails from '@mui/material/AccordionDetails'
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
 
-
-
-
 const UseProfile = () => {
   const dispatch = useDispatch()
   const { id } = useParams()
   const user = useSelector((state) => state.AuthReducer.user)
   console.log('user ', user)
 
-  
   /* Controlled accordeon */
   const [expandMDT, setExpandMDT] = React.useState(false)
   const [expandRepresentant, setExpandRepresentant] = React.useState(false)
   const [expandSISERI, setExpandSISERI] = React.useState(false)
   const [expandContrat, setExpandContrat] = React.useState(false)
-  
 
   /* Controlled accordeon */
   const toggleAcordionMDT = () => {
@@ -231,30 +224,6 @@ const UseProfile = () => {
             </Accordion>
           </Box>
         </Box>
-       
-
-        {/* 
-        <div>
-      <Link to={`/intervenant-details/${intervenant._id}`}>
-        <button className="btn btn-primary">voir plus de details sur l'intervenant</button>
-        </Link>
-        {show ? (
-          <form onSubmit={onSubmit}>
-            <div className="form-group">
-              <label for="Nom">nom de l'intervenant</label>
-              //,,........ faire un déroulant pour montrer plus de details sur l'intervenant
-              plus boutton modifier et boutton supprimer
-      </div>
-      */}
-
-        {/*         <Link to={'/intervenantsListe'}>
-          <button className="btn btn-primary">
-            voir plus de details sur l'intervenant
-          </button>
-        </Link>
-        <button>ajouter un intervenant</button>
-      </div> */}
-      
       </div>
     </div>
   )

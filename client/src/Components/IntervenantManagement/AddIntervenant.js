@@ -8,7 +8,6 @@ import CardContent from '@mui/material/CardContent'
 import Typography from '@mui/material/Typography'
 import Box from '@mui/material/Box'
 
-
 const AddIntervenant = () => {
   const navigate = useNavigate()
   const dispatch = useDispatch()
@@ -26,7 +25,6 @@ const AddIntervenant = () => {
     DateDerniereFicheDexposition: '',
     DateDerniereFicheDaptitude: '',
     Commentaire: ' ',
-
   })
   const handleChange = (event) => {
     setIntervenant({ ...intervenant, [event.target.id]: event.target.value })
@@ -48,7 +46,6 @@ const AddIntervenant = () => {
       DateDerniereFicheDexposition: '',
       DateDerniereFicheDaptitude: '',
       Commentaire: ' ',
-
     })
     navigate('/intervenantsListe')
   }
@@ -60,11 +57,10 @@ const AddIntervenant = () => {
           display: 'flex',
           flexDirection: 'row',
           flexWrap: 'wrap',
-          alignContent:'center', 
+          alignContent: 'center',
           alignSelf: 'flex-start',
           width: '80%',
           marginLeft: '5%',
-         
         }}
       >
         <Box
@@ -75,8 +71,7 @@ const AddIntervenant = () => {
             marginBottom: '2%',
             marginRight: '-10%',
             display: 'flex',
-            flexWrap:"wrap"
-            
+            flexWrap: 'wrap',
           }}
         >
           <Card sx={{ maxWidth: 345 }}>
@@ -323,14 +318,13 @@ const AddIntervenant = () => {
             </CardContent>
           </Card>
           <button
-          type="submit"
-          className="btn btn-light"
-          style={{ maxHeight: '5%', marginLeft: '20%',marginTop:'10%' }}
-        >
-          Ajouter l'intervenant
-        </button>
+            type="submit"
+            className="btn btn-light"
+            style={{ maxHeight: '5%', marginLeft: '20%', marginTop: '10%' }}
+          >
+            Ajouter l'intervenant
+          </button>
         </Box>
-        
       </form>
     </div>
   )

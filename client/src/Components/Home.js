@@ -15,7 +15,7 @@ function Home() {
           src={logoMARSS}
           alt="marsslogo"
           style={{
-            marginTop:'2%',
+            marginTop: '2%',
             marginLeft: '50%',
             height: '30%',
             width: '45%',

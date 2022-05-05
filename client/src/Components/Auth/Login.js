@@ -1,4 +1,3 @@
-
 import React from 'react'
 import { useState } from 'react'
 import { useDispatch } from 'react-redux'
@@ -19,7 +18,6 @@ const Login = () => {
     event.preventDefault()
     dispatch(login(user, navigate))
     setUser({ email: ' ', password: ' ' })
-    
   }
   return (
     <div
@@ -85,7 +83,6 @@ const Login = () => {
         >
           Acceder au Compte client
         </button>
-       
       </form>
     </div>
   )

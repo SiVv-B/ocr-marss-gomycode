@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from 'react'
 import Card from '@mui/material/Card'
 import CardContent from '@mui/material/CardContent'
@@ -42,7 +41,7 @@ const SingleUser = () => {
   const [updatedUser, setupDated] = useState({
     username: '',
     email: '',
-   /*  password: '', */
+    /*  password: '', */
     SelectedFile: '',
     NumSiret: '',
     role: '',
@@ -130,7 +129,7 @@ const SingleUser = () => {
     setShow(false)
   }
   /* ------------ */
-  
+
   /* Get one user */
   useEffect(() => {
     dispatch(getOneUser(id))
@@ -347,7 +346,7 @@ const SingleUser = () => {
                     value={updatedUser.email}
                   />
                 </div>
-{/*                 <div className="form-group">
+                {/*                 <div className="form-group">
                   <label for="password">Mot de pass</label>
                   <input
                     onChange={handleChange}
@@ -357,7 +356,7 @@ const SingleUser = () => {
                     value={updatedUser.password}
                   />
                 </div> */}
-                
+
                 <div className="form-group">
                   <label for="SelectedFile">Image/logo</label>
                   <input
@@ -618,35 +617,7 @@ const SingleUser = () => {
               <DeleteIcon />
             </IconButton>
           </Tooltip>
-          {/* Add user */}
-          {/*  <Fab size="small" color="inherit" aria-label="add">
-            <Tooltip title="Ajouter un Intervenant">
-              <IconButton>
-                <AddIcon />
-              </IconButton>
-            </Tooltip>
-          </Fab> */}
         </Box>
-        {/* 
-        <div>
-      <Link to={`/intervenant-details/${intervenant._id}`}>
-        <button className="btn btn-primary">voir plus de details sur l'intervenant</button>
-        </Link>
-        {show ? (
-          <form onSubmit={onSubmit}>
-            <div className="form-group">
-              <label for="Nom">nom de l'intervenant</label>
-              //,,........ faire un déroulant pour montrer plus de details sur l'intervenant
-              plus boutton modifier et boutton supprimer
-      </div>
-      */}
-        {/*         <Link to={'/intervenantsListe'}>
-          <button className="btn btn-primary">
-            voir plus de details sur l'intervenant
-          </button>
-        </Link>
-        <button>ajouter un intervenant</button>
-      </div> */}
       </div>
     </div>
   )

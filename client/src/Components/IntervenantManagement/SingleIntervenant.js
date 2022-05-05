@@ -152,7 +152,7 @@ const SingleIntervenant = () => {
             marginTop: '2%',
             marginRight: '20%',
             marginLeft: '-20%',
-            width:'45%'
+            width: '45%',
           }}
         >
           {/* données médicales */}
@@ -234,7 +234,11 @@ const SingleIntervenant = () => {
                   gutterBottom
                   variant="h5"
                   component="div"
-                  style={{ textAlign: 'center', display:'flex',flexWrap:'wrap' }}
+                  style={{
+                    textAlign: 'center',
+                    display: 'flex',
+                    flexWrap: 'wrap',
+                  }}
                 ></Typography>
                 <Typography variant="body2" color="text.primary">
                   <p>
